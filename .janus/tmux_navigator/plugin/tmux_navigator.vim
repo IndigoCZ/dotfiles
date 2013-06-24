@@ -34,5 +34,9 @@ if $TMUX != ''
   nmap <c-h> :call <SID>TmuxWinCmd('h')<cr>
   nmap <c-l> :call <SID>TmuxWinCmd('l')<cr>
   nmap <c-\> :call <SID>TmuxWinCmd('p')<cr>
-
+else
+  map <C-h> <C-w>h
+  map <C-j> <C-w>j
+  map <C-k> <C-w>k
+  map <C-l> <C-w>l
 end
